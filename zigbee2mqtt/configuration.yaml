@@ -1,0 +1,44 @@
+homeassistant: true
+advanced:
+  network_key:
+    - 144
+    - 241
+    - 43
+    - 84
+    - 139
+    - 168
+    - 239
+    - 203
+    - 113
+    - 59
+    - 153
+    - 229
+    - 218
+    - 18
+    - 25
+    - 10
+  pan_id: 62430
+  ext_pan_id:
+    - 148
+    - 28
+    - 55
+    - 73
+    - 46
+    - 126
+    - 116
+    - 221
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+mqtt:
+  server: mqtt://core-mosquitto:1883
+  user: mqtt_user
+  password: mqtt_password
+serial:
+  port: >-
+    /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20240124210926-if00
+  adapter: ezsp
+frontend:
+  port: 8099
+device_options:
+  legacy: false

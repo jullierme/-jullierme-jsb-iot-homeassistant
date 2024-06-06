@@ -3,7 +3,7 @@ stop_alexa_command:
   sequence:
     - service: media_player.play_media
       data:
-        entity_id: '{{ states("sensor.alexa_selector") }}'
+        entity_id: media_player.echo_pai
         media_content_id: stop
         media_content_type: custom
   mode: single

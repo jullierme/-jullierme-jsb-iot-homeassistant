@@ -1,9 +1,0 @@
-send_alexa_command:
-  alias: Send Alexa command
-  sequence:
-    - service: media_player.play_media
-      data:
-        entity_id: '{{ states("sensor.alexa_selector") }}'
-        media_content_id: '{{ states("input_text.cmd_text") }}'
-        media_content_type: custom
-  mode: single
