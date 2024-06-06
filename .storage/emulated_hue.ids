@@ -1,8 +1,0 @@
-{
-  "version": "1",
-  "minor_version": 1,
-  "key": "emulated_hue.ids",
-  "data": {
-    "2": "input_boolean.flag_ativar_rotina_boa_noite"
-  }
-}
