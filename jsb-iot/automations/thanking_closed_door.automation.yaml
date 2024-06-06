@@ -1,0 +1,23 @@
+- id: '1717625628356'
+  alias: Agradecer Porta Fechada Automation
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.sensor_da_porta_da_sala_door
+      from: 'on'
+      to: 'off'
+  condition:
+    - condition: state
+      entity_id: input_boolean.alerta_porta_aberta_ativado
+      state: 'on'
+  action:
+    - service: notify.alexa_media
+      data:
+        target:
+          - media_player.echo_pai_2
+          - media_player.echo_hub
+        message: Obrigado por fechar a porta.
+        data:
+          type: announce
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.alerta_porta_aberta_ativado
+  mode: single

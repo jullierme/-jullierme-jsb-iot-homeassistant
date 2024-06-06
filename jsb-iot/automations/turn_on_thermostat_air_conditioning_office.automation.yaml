@@ -1,0 +1,95 @@
+- id: '1717452334534'
+  alias: ligar_ar_condicionado_escritorio_automation
+  description: ''
+  trigger:
+    - platform: state
+      entity_id:
+        - climate.termostato_ar_condicionado
+    - platform: state
+      entity_id:
+        - climate.termostato_ar_condicionado
+      attribute: temperature
+  condition: []
+  action:
+    - choose:
+        - conditions:
+            - condition: template
+              value_template: ' {{ trigger.to_state.attributes.temperature | int == 18 }}'
+            - condition: template
+              value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''cool''
+          }}'
+          sequence:
+            - service: scene.turn_on
+              metadata: {}
+              target:
+                entity_id: scene.ligarar18
+            - service: input_boolean.turn_on
+              target:
+                entity_id:
+                  - input_boolean.flag_ar_condicionado_escritorio_ligado
+              data: {}
+        - conditions:
+            - condition: template
+              value_template: ' {{ trigger.to_state.attributes.temperature | int == 19 }}'
+            - condition: template
+              value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''cool''
+          }}'
+          sequence:
+            - service: scene.turn_on
+              metadata: {}
+              target:
+                entity_id: scene.ligarar19
+            - service: input_boolean.turn_on
+              target:
+                entity_id:
+                  - input_boolean.flag_ar_condicionado_escritorio_ligado
+              data: {}
+        - conditions:
+            - condition: template
+              value_template: ' {{ trigger.to_state.attributes.temperature | int == 20 }}'
+            - condition: template
+              value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''cool''
+          }}'
+          sequence:
+            - service: scene.turn_on
+              metadata: {}
+              target:
+                entity_id: scene.ligarar20
+            - service: input_boolean.turn_on
+              metadata: {}
+              data: {}
+              target:
+                entity_id: input_boolean.flag_ar_condicionado_escritorio_ligado
+        - conditions:
+            - condition: template
+              value_template: ' {{ trigger.to_state.attributes.temperature | int == 21 }}'
+            - condition: template
+              value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''cool''
+          }}'
+          sequence:
+            - service: scene.turn_on
+              metadata: {}
+              target:
+                entity_id: scene.ligarar21
+            - service: input_boolean.turn_on
+              target:
+                entity_id:
+                  - input_boolean.flag_ar_condicionado_escritorio_ligado
+              data: {}
+        - conditions:
+            - condition: template
+              value_template: ' {{ trigger.to_state.attributes.temperature | int == 22 }}'
+            - condition: template
+              value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''cool''
+          }}'
+          sequence:
+            - service: scene.turn_on
+              metadata: {}
+              target:
+                entity_id: scene.ligarar22
+            - service: input_boolean.turn_on
+              metadata: {}
+              data: {}
+              target:
+                entity_id: input_boolean.flag_ar_condicionado_escritorio_ligado
+  mode: single

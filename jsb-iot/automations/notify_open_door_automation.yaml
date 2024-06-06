@@ -1,0 +1,33 @@
+- id: '1717625606588'
+  alias: Notificar Porta Aberta Automation
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.sensor_da_porta_da_sala_door
+      from: 'off'
+      to: 'on'
+      for:
+        hours: 0
+        minutes: 1
+        seconds: 0
+  condition: []
+  action:
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.alerta_porta_aberta_ativado
+    - service: notify.alexa_media
+      data:
+        target:
+          - media_player.echo_pai_2
+          - media_player.echo_hub
+        message: A porta da sala está aberta. Por favor, feche a porta.
+        data:
+          type: announce
+    - delay:
+        hours: 0
+        minutes: 1
+        seconds: 0
+    - condition: state
+      entity_id: binary_sensor.sensor_da_porta_da_sala_door
+      state: 'on'
+    - service: automation.trigger
+      entity_id: automation.notificar_porta_aberta_automation
+  mode: single

@@ -1,0 +1,9 @@
+stop_alexa_command:
+  alias: STOP Alexa command
+  sequence:
+    - service: media_player.play_media
+      data:
+        entity_id: '{{ states("sensor.alexa_selector") }}'
+        media_content_id: stop
+        media_content_type: custom
+  mode: single

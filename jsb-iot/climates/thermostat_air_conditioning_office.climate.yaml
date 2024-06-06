@@ -1,0 +1,10 @@
+- platform: generic_thermostat
+  unique_id: GTerm
+  name: Termostato Ar-Condicionado
+  heater: input_boolean.flag_ar_condicionado_escritorio_ligado
+  target_sensor: sensor.teste
+  ac_mode: true
+  min_temp: 18
+  target_temp: 22
+  hot_tolerance: 0
+  precision: 1

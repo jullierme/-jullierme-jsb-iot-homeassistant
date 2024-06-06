@@ -1,0 +1,14 @@
+/www/
+/.cloud/
+/.idea/
+/.storage/
+/blueprints/
+/custom_components/
+/deps/
+/tts/
+/home-assistant.log
+/home-assistant.log.1
+/home-assistant.log.fault
+/home-assistant_v2.db
+/home-assistant_v2.db-shm
+/home-assistant_v2.db-wal

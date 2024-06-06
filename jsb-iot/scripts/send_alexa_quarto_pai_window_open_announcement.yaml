@@ -1,0 +1,11 @@
+send_alexa_window_open_announcement:
+  alias: 'Alexa announcement: Janela do quarto Aberta'
+  sequence:
+    - service: notify.alexa_media
+      data:
+        target:
+          - media_player.echo_pai
+        message: Janela do quarto Aberta
+        data:
+          type: announce
+  mode: single
