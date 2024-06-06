@@ -1,18 +1,11 @@
 
 # Loads default set of integrations. Do not remove.
 default_config:
-  name: JSB-IoT Home
-  latitude: !secret home_latitude
-  longitude: !secret home_longitude
-  elevation: 430
+  name: JSB-IoT Home Assistant
   unit_system: metric
   currency: BRL
   country: BR
   time_zone: America/Sao_Paulo
-  external_url: !secret external_url
-  internal_url: !secret internal_url
-  allowlist_external_dirs:
-    - /config
 
 # Load frontend themes from the themes folder
 frontend:
