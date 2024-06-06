@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "input_select",
+  "data": {
+    "items": [
+      {
+        "id": "alexa_state",
+        "name": "alexa_state",
+        "icon": "mdi:amazon-alexa",
+        "options": [
+          "Echo Jullia",
+          "Echo Flex Sala",
+          "Echo Flex Área de serviço",
+          "Echo Pai",
+          "Echo Dot Escritório",
+          "Echo Hub",
+          "Casa"
+        ]
+      }
+    ]
+  }
+}

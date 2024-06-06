@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {
+        "data": {},
+        "disabled_by": null,
+        "domain": "hassio",
+        "entry_id": "1d36721d0824a75eeda27fe1e5b203ad",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "system",
+        "title": "Supervisor",
+        "unique_id": "hassio",
+        "version": 1
+      },
+      {
+        "data": {},
+        "disabled_by": null,
+        "domain": "bluetooth",
+        "entry_id": "cb63d84d3f614462156f04282977a571",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "integration_discovery",
+        "title": "Raspberry Pi Foundation bcm43438-bt (B8:27:EB:9E:C5:C2)",
+        "unique_id": "B8:27:EB:9E:C5:C2",
+        "version": 1
+      },
+      {
+        "data": {},
+        "disabled_by": null,
+        "domain": "raspberry_pi",
+        "entry_id": "0ed3d341eba77bc56cf772b95a8f7deb",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "system",
+        "title": "Raspberry Pi",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "data": {},
+        "disabled_by": null,
+        "domain": "rpi_power",
+        "entry_id": "62833b79ff30a71512b0b621df842396",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "title": "Raspberry Pi Power Supply Checker",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "data": {
+          "language": "en",
+          "tld": "com"
+        },
+        "disabled_by": null,
+        "domain": "google_translate",
+        "entry_id": "9c3463edbcc958ff5735ee4f9be6f352",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "title": "Google Translate text-to-speech",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "data": {
+          "user_code": "CaZwMEJ",
+          "token_info": {
+            "t": 1717675880100,
+            "uid": "eu1587133847746ZwMEJ",
+            "expire_time": 7200,
+            "access_token": "a1ed4054787165255a81c30bc1f4266f",
+            "refresh_token": "0bcb2d7771b19ee3e607702266dd5648"
+          },
+          "terminal_id": "171761866914530aeGQ",
+          "endpoint": "https://apigw.tuyaeu.com"
+        },
+        "disabled_by": null,
+        "domain": "tuya",
+        "entry_id": "c09b9f101c9bc41566a68dab1282102e",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "dhcp",
+        "title": "julliermegyn@gmail.com",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "data": {
+          "udn": "uuid:acde7c2e-721b-48f1-8d59-242de4b69f2f",
+          "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+          "original_udn": "uuid:4f558cef-8d5e-4fa5-a7d5-cd567e00df79",
+          "location": "http://192.168.68.1:1900/ynftj/rootDesc.xml",
+          "mac_address": "a8:42:a1:3a:71:50",
+          "host": "192.168.68.1"
+        },
+        "disabled_by": null,
+        "domain": "upnp",
+        "entry_id": "56dbcdae8b080adda1d7a922f9a12d82",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "title": "X50",
+        "unique_id": "uuid:acde7c2e-721b-48f1-8d59-242de4b69f2f::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+        "version": 1
+      },
+      {
+        "data": {},
+        "disabled_by": null,
+        "domain": "ibeacon",
+        "entry_id": "fbf350549723866eb2c4de9adbce5c4d",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "bluetooth",
+        "title": "iBeacon Tracker",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "data": {
+          "broker": "core-mosquitto",
+          "port": 1883,
+          "username": "homeassistant",
+          "password": "VieMaG0woj7quei1iethei9xahxa9zoo2veesaeB6aeno8IweeziJut5uGhish7O",
+          "discovery": true
+        },
+        "disabled_by": null,
+        "domain": "mqtt",
+        "entry_id": "ff8b66bed733101e92ac23420b5bddcb",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "hassio",
+        "title": "Mosquitto broker",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "data": {
+          "token": "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"
+        },
+        "disabled_by": null,
+        "domain": "hacs",
+        "entry_id": "8935759e08dcc43f02917987fba3ec28",
+        "minor_version": 1,
+        "options": {
+          "experimental": false
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "title": "",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "data": {
+          "username": "julliermegyn@gmail.com",
+          "password": "&Jj139111",
+          "country_code": "+55"
+        },
+        "disabled_by": null,
+        "domain": "sonoff",
+        "entry_id": "9742ee3f879e44bef5fb6a05a2d94f6d",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "title": "julliermegyn@gmail.com",
+        "unique_id": "julliermegyn@gmail.com",
+        "version": 1
+      },
+      {
+        "data": {
+          "host": "192.168.1.3",
+          "api_key": "uCi-qUZdb5Uj8YtjoNbX2ZEJr5n5sWxWotmbv8J1",
+          "api_version": 2
+        },
+        "disabled_by": null,
+        "domain": "hue",
+        "entry_id": "f99f74f75ac14c49c609d24454d3a9ff",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "title": "Hue Bridge ecb5fa97c4e9",
+        "unique_id": "ecb5fa97c4e9",
+        "version": 1
+      },
+      {
+        "data": {
+          "email": "julliermegyn@gmail.com",
+          "password": "&Jj139111",
+          "url": "amazon.com.br",
+          "debug": false,
+          "scan_interval": 60,
+          "include_devices": "",
+          "exclude_devices": "",
+          "oauth": {
+            "access_token": "Atna|EwICIMcF-MZtej91-gdDeub6pVK3rVusq9Gmgkbw7UEZ0Be7j1w-Cwnhj_5NfyVPsxvoEN3EuXr5_u-c_zUl_TublU61G-wTnwrE_72hbVShLBOYdTI2XCjYaG2lk5JdCpWndT4CI1MX716-EaKf2-P8b441VstqAzxtCjcItJ5-xKcPCESWr8uJlH5uz_i7cXAJEbm4TjbFKuCev4u_Yt6J54QaWOvmzGPUfOBHcoUskS9OWVDIomVcdKuVIWD3yT1HWtpz51niyHjXlfPvw0rW2hp8thNRhWcvxN3RluLvtfBMYuy8ih_I1T0wCAGhjgV2L29Ee1NKmQ2qxTDrtnT4ip2aHbeNzFBUfN8REOF2U2mB1A",
+            "refresh_token": "Atnr|EwICIFcVWrEunc44CwToC34ynRZ5MAiLYmXMMOHNOz0tE-yWIieg2mjiUyYEltU-5ehk2vz1xiksTizWBgSSbJ35jF_XmHperNeDLZdRl_2p2lBflQa-pS38q0uCaULsaX2B7kr2iag6JM6e9a8QLDDOpFFOmjklOCzvZiryfodd5WxQzYjoTO4BFUW9jjvM5Pp_vKjT9UM_iAPJ5mGiXis4th9YHflbUIK_ey7j28-p4T5DBZKvMjEC_7KTk9W3GDFsMYTC02Iiu3t6lwsiyIjEM_GZD_0Zy10vC_SnP-tVFnZstG4QPbDbwpBoWe0D_B4UFnZnD9XSPgwhnaZjYAvazKOopVBSxr3-xZH48lyYVKG4hw",
+            "expires_in": 1717685368.934255,
+            "mac_dms": {
+              "device_private_key": "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDK+4D38jqsP3URoQhh2Xw3qKpGd0VCDr2/kHR/dG3X/Z5nVXF8fNRperiVdkaTTFAULWnJkH9jwjgR6oShu8v62Yf/ULa3V57VwHp4mDKurcz/BazF2n0vihXLtLDkKrhrIk9TLP3WHXFSjk0SpiPFrFLFBfp02uGfG9Qke3PeEkEdDXe7DbpydeXhaDnBZsFhPlaDH95f+eJ0JW7V3DSqGSDM33Z2x3WgBOfwivwaNfUFB2+2EEG5rV8fy9mj8RspFsfny3x70iHlODB1jWrDsKoKTGGtPz5W1NC1LZoXiFfXIlLSn9fxQ633HdPFhVHng6o8r0e8+90yAHP0HvVdAgMBAAECggEADJS2E6gh1tdADE2s1VPDjTeZBjESS9vaCuuLLPMsc7y2erUjCZI7ICaJFkp0aWDLfdSqv+GC483/56xfeB7Jr8yXz01TZd26bIk3jg3w5j7De/MAGGtIYw/t9ehHJn03XPyNahxZx1Gf2nwTbtp5USEzKB8MvP1sCo6RAYndTqA6uHPgGHvHfTgeooQTHK7k7A89LUKArK6bnhZmcTNDv806cDH3VDc8ctJmmGPz73okkbMpo1mHhq5JwdRCbtFqWsq1XveVs9ebaIr3PWhRq8efsBZ+xP3yHbAlqUHgMQy/uRlK5W77J0yS7wGXmozk1Q/WwgUZU8d7e9DDCaB6QQKBgQDwjpDSZxoiqrecZvX1zNMhmuIAccI3QqPOhsVOxnSYJwg7ZMDDsrpRnoxQr63RIXrS5xAWasnmyBF4J+ix+hEr3Q5zn2umdf1wSxeQujOLR671zk8A8RoIn8LA4to20A0zA8JgZcKn8CUYmxL4U+qpsv/UY+VUrlwVJsL1lUVnxQKBgQDYA2uYUpKqPwH7qu3wt5HiZKonpsA5obrlX1H5g+PVSqllodLZMs92T3CvyFRC1Iz/VpPwpLGxBShqjaEXFWbbPhm2noef2+ajuj7jhW5Zvjmzv5IO9pXzkFuWef8Y+skeJ6LAdxTc7BY/7TbvWZ+84Sf1fkvxvccHPMLL/ZKYuQKBgQCrsoZJtw9feQxu1Mpvs89qp/rxqECgYq86hNUlwd6MjyeABQzVYac9BHZQTOQ6ZbQd/pBr/7K2R0y4v3uGNN+2uCRNgJc8i/DmCqL6SPzrR7HofmXDXVNgnm9Kb2CjSOJy7Bb76QYEChLgOidTGcpfb4TMWrTgOUc+TZlP4khUpQKBgFStypD01a/NcV6R3CLAI30nTxiqIrK09soR+tWgYUDsuskvjbM9WtybOaZ/FqD4J6m069urBElLp1NV3+9noWGSz4uqS6pcDubiDOMuHFsr2fzfvUcGXTQUxAKSInFNZmfey8s9Iz2TgwleWWmsrZTigsKW1viWF557sDU9WylpAoGBAK7R9OODCzsvimo+InOZ/ZK6EQoX9C+oYCEpUxN2h1NKi3OIOOJS8vWIisuQ5VXUYqwaxNAJaiHeAyeaPmmCnikidwed0a7FlV9QjTLquvekmhad+m+IqYU9mf7Ebvbsby5x/o7XuGzFiGHLQH3gEANsu26fM6Vwg8hQi2DIKGPY",
+              "adp_token": "{enc:cT3CiC0TmPGVuE+2oPXIJ/BcP7xhosJRc6PhGWnwDMBF9XPaO0w6Sd1GCPm+hVLnandrRyhOEz6PtO8MKgyevob2PBXlOlDI16EWlvRmYqlCooLsWoWIXY2GxrFsQg8UWjy0QzwYQBZioQ2g9d8sopRldQSOLi39DERQ8+WO9yZcwTdeocd7S2en+jgf+9PqAktHRQkRz5ypPBKus9c+ARs+BrJqTn96u1Yxb5Of6vDyuT5yIUJhgWnMfoaH57HpwH7kIwH3CL3diz2aF3fXhJV9oyxiR6ZdELcOzOPKytCRfu70xHSWMhPD6oHEDwNaiddYghu164rRnZ0R27PsyIukswIJ63uPA3MmRzMDyXN3lZp51qbfFmZIssXWfz1Zrk8ILV5A5RG9tdMBFUU0YF5M1j13/d9ORqsd7u+38AHqLQlcjOCa5w6eZgxcniw3MKL1V8ITaXB5FDBohGqkNN5Sfe8RA9Mz8VzRNzIMUkKH4WqKD8FnMqT0A1b5jtt4SZ6K4XHlDiKllnlZouGiZKyP4xAyGICZ6MY1tPWJwuju+tgFbZCj2Ea+rILOo0yb2Z5upVnXk0lMAcHOzdXTmV08suFDiWrEE+ag8cTUYqudadfA+qET3dIen8wWvuPNITP8itg1cNykeEYhY7ebInPyS4N3HKuXvoLcPl+zHe3nqKocFv33mmGZOQK6sbzzmWvnFcW+3LXy+tzAOygckQjHiDBCfx7zcVYeTnKx+UhPJhxWDGTF6dZNbEHNhMbTFJbtZ5dicVcxjIi48NgDEGFC3PX36qmHRaV50x45dw/mjFCLPI1/AW0fJglqPxN36dqvcfuDPoNZ6WemlSowgU6UxALd2Yz1lvmSzwCQVKuljYIWi4fj6jyEPVAe93DX3Bjwj9nANv9peZsDE+DTP+VQP2+NSg82u05pcmrnHYzbwAXITgPLCPzWh8NgKPfWJEk/seNcTWv+EuJbrol+QRONldXaZd/FnMR0t5eRtpBtB2AdPnc12G2DQt4eScZ73Ov0bntiEqhb3/1jgMVkNox8zfYYu7d/FyTvFcTiUhs=}{key:VURj1zYEY2p64AEPSkZXK7QHp2DtuqiiX4LFeJSK6j3rKPYRvpPPCno6XodE0shSATLwg+q2cIkG45tBZb+Rb/e7Ogj/T3FAi3DnPvWbs32ievSYafDaowQ3RA4nHG1orSplnTwvq+kqg+bErMKSXRniOp/PYugOsl6CBfj5vpyvAdhfeAqzbqxApCzIIWOWmZZSpN3cy/5iExmohJ3QNJDWxvYaO6qkngEtGXT1fuoVKIwOJ1pRRAy5Ex2E2pqCe7RHocpa7fREYhrJ6bmZBI6h57FxRae3ziaRaLzbVlVNs7MeIx2QywRot9ZRlHEXkBrw9R7HdGu/DhTUBPVtjA==}{iv:K0BXxPi0JICZozUvzjIyIQ==}{name:QURQVG9rZW5FbmNyeXB0aW9uS2V5}{serial:Mg==}"
+            },
+            "code_verifier": "K3jpgnndVCY6_Bd6oesFBr3H3U0w1saQar1GA9U6SfA",
+            "authorization_code": "ANlPtRjLRlmmnMVlOEykFHdf"
+          }
+        },
+        "disabled_by": null,
+        "domain": "alexa_media",
+        "entry_id": "4ccc3cab0152953a89863d7ca3d843e0",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "title": "julliermegyn@gmail.com - amazon.com.br",
+        "unique_id": "julliermegyn@gmail.com - amazon.com.br",
+        "version": 1
+      },
+      {
+        "data": {},
+        "disabled_by": null,
+        "domain": "sun",
+        "entry_id": "be4bf20c62ee052432aad818ba1201d1",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "title": "Sun",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "data": {
+          "app_data": {
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification",
+            "push_token": "e4s2kphxVUnfgZdNXTBXYy:APA91bFFcguaVbQxpkI2-iEUFM2x6DrBGEx7SvEobW_M1UhKD1MiTeurA7zNQETxkbNWG1z-kgQgniEVSSz8itVbH7f5SlgEa2C1QIeLXzR3mmmGyQ-hcOtiCVxBYWWGiXPSaC3QSYeJ"
+          },
+          "os_version": "17.5.1",
+          "app_name": "Home Assistant",
+          "device_name": "Jullierme’s iPhone",
+          "device_id": "CFA6A58B-D637-4179-87B2-5EA89C7D8728",
+          "model": "iPhone14,3",
+          "os_name": "iOS",
+          "manufacturer": "Apple",
+          "app_version": "2024.5.1 (2024.688)",
+          "app_id": "io.robbie.HomeAssistant",
+          "supports_encryption": true,
+          "webhook_id": "7897173b7d884d36c115bf2463ef4d5ae283afa0e452e96630147ddd5c48633d",
+          "secret": "910484158a4ecbc220759f6d0fbc486f1193c5505b87695a41b3f244c9a0a2a5",
+          "user_id": "918232e5712744408ed9c12a024413e5",
+          "no_legacy_encryption": true
+        },
+        "disabled_by": null,
+        "domain": "mobile_app",
+        "entry_id": "e806e407310ccfe452cc3d7fbd1331ac",
+        "minor_version": 1,
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "title": "Jullierme’s iPhone",
+        "unique_id": "io.robbie.HomeAssistant-CFA6A58B-D637-4179-87B2-5EA89C7D8728",
+        "version": 1
+      }
+    ]
+  }
+}

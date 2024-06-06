@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_boolean",
+  "data": {
+    "items": [
+      {
+        "id": "flag_ar_condicionado_escritorio_ligado",
+        "name": "flag_ar_condicionado_escritorio_ligado",
+        "icon": "mdi:air-conditioner"
+      },
+      {
+        "id": "ativar_rotina_boa_noite",
+        "name": "Ativar rotina Boa Noite"
+      },
+      {
+        "id": "alerta_porta_aberta_ativado",
+        "name": "Alerta Porta Aberta Ativado"
+      }
+    ]
+  }
+}

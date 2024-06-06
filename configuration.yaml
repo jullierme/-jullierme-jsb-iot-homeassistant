@@ -1,11 +1,17 @@
 
 # Loads default set of integrations. Do not remove.
 default_config:
-  name: JSB-IoT Home Assistant
-  unit_system: metric
-  currency: BRL
-  country: BR
-  time_zone: America/Sao_Paulo
+  "latitude": -16.70618416506013,
+  "longitude": -49.28827285766602,
+  "elevation": 0,
+  "unit_system_v2": "metric",
+  "location_name": "Home",
+  "time_zone": "America/Sao_Paulo",
+  "external_url": null,
+  "internal_url": null,
+  "currency": "BRL",
+  "country": "BR",
+  "language": "en"
 
 # Load frontend themes from the themes folder
 frontend:
@@ -20,7 +26,14 @@ script: !include_dir_merge_named jsb-iot/scripts
 scene: !include_dir_merge_named jsb-iot/scenes
 climate: !include_dir_merge_named jsb-iot/climates
 emulated_hue: !include_dir_merge_named jsb-iot/hues
-      
+
+input_boolean: !include jsb-iot/helpers/input_boolean.yaml
+input_select: !include jsb-iot/helpers/input_select.yaml
+input_number: !include jsb-iot/helpers/input_number.yaml
+input_text: !include jsb-iot/helpers/input_text.yaml
+input_datetime: !include jsb-iot/helpers/input_datetime.yaml
+input_button: !include jsb-iot/helpers/input_button.yaml
+
 template:
   sensor:
     - name: "Alexa Selector"
