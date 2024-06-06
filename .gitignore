@@ -13,3 +13,5 @@
 /home-assistant_v2.db-wal
 /.storage/
 /zigbee2mqtt/log/
+/.storage/
+/zigbee2mqtt/log/
