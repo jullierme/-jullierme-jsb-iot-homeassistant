@@ -12,7 +12,7 @@
   condition: []
   action:
     - service: input_boolean.turn_on
-      entity_id: input_boolean.alerta_porta_aberta_ativado
+      entity_id: input_boolean.flag_alerta_porta_aberta_ativado
     - service: notify.alexa_media
       data:
         target:

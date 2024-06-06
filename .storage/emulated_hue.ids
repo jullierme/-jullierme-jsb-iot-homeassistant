@@ -3,7 +3,6 @@
   "minor_version": 1,
   "key": "emulated_hue.ids",
   "data": {
-    "1": "input_button.ativar_boa_noite",
-    "2": "input_boolean.ativar_rotina_boa_noite"
+    "2": "input_boolean.flag_ativar_rotina_boa_noite"
   }
 }

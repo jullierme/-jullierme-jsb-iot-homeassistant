@@ -1,0 +1,7 @@
+flag_ar_condicionado_escritorio_ligado:
+  name: flag_ar_condicionado_escritorio_ligado
+  icon: mdi:air-conditioner
+flag_ativar_rotina_boa_noite:
+  name: flag_ativar_rotina_boa_noite
+flag_alerta_porta_aberta_ativado:
+  name: flag_alerta_porta_aberta_ativado

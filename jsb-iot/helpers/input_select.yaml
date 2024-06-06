@@ -1,0 +1,11 @@
+alexa_state:
+  name: alexa_state
+  icon: mdi:amazon-alexa
+  options:
+    - Echo Jullia
+    - Echo Flex Sala
+    - Echo Flex Área de serviço
+    - Echo Pai
+    - Echo Dot Escritório
+    - Echo Hub
+    - Casa

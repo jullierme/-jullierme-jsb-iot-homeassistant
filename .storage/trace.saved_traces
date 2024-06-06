@@ -992,7 +992,7 @@
             "condition": [
               {
                 "condition": "state",
-                "entity_id": "input_boolean.alerta_porta_aberta_ativado",
+                "entity_id": "input_boolean.flag_alerta_porta_aberta_ativado",
                 "state": "on"
               }
             ],
@@ -1012,7 +1012,7 @@
               },
               {
                 "service": "input_boolean.turn_off",
-                "entity_id": "input_boolean.alerta_porta_aberta_ativado"
+                "entity_id": "input_boolean.flag_alerta_porta_aberta_ativado"
               }
             ],
             "mode": "single"
@@ -1156,7 +1156,7 @@
             "condition": [
               {
                 "condition": "state",
-                "entity_id": "input_boolean.alerta_porta_aberta_ativado",
+                "entity_id": "input_boolean.flag_alerta_porta_aberta_ativado",
                 "state": "on"
               }
             ],
@@ -1176,7 +1176,7 @@
               },
               {
                 "service": "input_boolean.turn_off",
-                "entity_id": "input_boolean.alerta_porta_aberta_ativado"
+                "entity_id": "input_boolean.flag_alerta_porta_aberta_ativado"
               }
             ],
             "mode": "single"

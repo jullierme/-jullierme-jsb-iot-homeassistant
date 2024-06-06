@@ -4,7 +4,7 @@
   trigger:
     - platform: state
       entity_id:
-        - input_boolean.ativar_rotina_boa_noite
+        - input_boolean.flag_ativar_rotina_boa_noite
       from: 'off'
       to: 'on'
   condition: []

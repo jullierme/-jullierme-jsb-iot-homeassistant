@@ -7,7 +7,7 @@
       to: 'off'
   condition:
     - condition: state
-      entity_id: input_boolean.alerta_porta_aberta_ativado
+      entity_id: input_boolean.flag_alerta_porta_aberta_ativado
       state: 'on'
   action:
     - service: notify.alexa_media
@@ -19,5 +19,5 @@
         data:
           type: announce
     - service: input_boolean.turn_off
-      entity_id: input_boolean.alerta_porta_aberta_ativado
+      entity_id: input_boolean.flag_alerta_porta_aberta_ativado
   mode: single

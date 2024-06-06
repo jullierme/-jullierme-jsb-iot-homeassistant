@@ -2,6 +2,6 @@ host_ip: 192.168.68.68
 listen_port: 80
 expose_by_default: false
 entities:
-  input_boolean.ativar_rotina_boa_noite:
+  input_boolean.flag_ativar_rotina_boa_noite:
     name: "Hue Boa Noite"
     hidden: false

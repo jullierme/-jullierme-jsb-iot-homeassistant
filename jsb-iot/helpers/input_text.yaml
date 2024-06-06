@@ -1,0 +1,10 @@
+cmd_text:
+  name: cmd_text
+  min: 0
+  max: 100
+  mode: text
+announcement_text:
+  name: announcement_text
+  min: 0
+  max: 100
+  mode: text
