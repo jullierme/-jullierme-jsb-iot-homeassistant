@@ -15,5 +15,8 @@ ate_logo:
         entity_id:
           - light.luz_1
           - light.luz_2
+    - service: script.turn_on
+      target:
+        entity_id: script.desligar_ar_condicionado_quarto
   mode: single
   icon: mdi:weather-night

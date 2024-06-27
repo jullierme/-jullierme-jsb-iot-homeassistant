@@ -12,7 +12,7 @@ hora_da_maldade:
                 entity_id: script.send_alexa_window_open_announcement
     - service: scene.turn_on
       target:
-        entity_id: scene.LigarAr18
+        entity_id: scene.desligarar
     - service: switch.turn_off
       target:
         entity_id:
@@ -27,7 +27,7 @@ hora_da_maldade:
       target:
         entity_id: light.luz_1
       data:
-        brightness_pct: 10
+        brightness_pct: 5
         color_name: 'red'
     - service: media_player.play_media
       data:
@@ -37,7 +37,7 @@ hora_da_maldade:
         entity_id: media_player.echo_pai
     - service: media_player.play_media
       data:
-        media_content_id: Volume 3
+        media_content_id: Volume 1.5
         media_content_type: custom
       target:
         entity_id: media_player.echo_pai
@@ -47,5 +47,8 @@ hora_da_maldade:
         media_content_type: custom
       target:
         entity_id: media_player.echo_pai
+    - service: script.turn_on
+      target:
+        entity_id: script.ligar_ar_condicionado_quarto
   mode: single
   icon: mdi:weather-night

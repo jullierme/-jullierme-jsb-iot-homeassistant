@@ -1,0 +1,26 @@
+ligar_ar_condicionado_quarto:
+  alias: Ligar Ar Condicionado Quarto Script
+  sequence:
+    - condition: numeric_state
+      entity_id:
+        - sensor.tomada_ar_condicionado_do_quarto_power
+      below: 10
+    - service: scene.turn_on
+      target:
+       entity_id: scene.LigarDesligarArCondicionadoDoQuarto
+  mode: single
+  icon: mdi:air-conditioner
+
+
+desligar_ar_condicionado_quarto:
+  alias: Desligar Ar Condicionado Quarto Script
+  sequence:
+    - condition: numeric_state
+      entity_id:
+        - sensor.tomada_ar_condicionado_do_quarto_power
+      above: 100
+    - service: scene.turn_on
+      target:
+        entity_id: scene.LigarDesligarArCondicionadoDoQuarto
+  mode: single
+  icon: mdi:air-conditioner

@@ -27,5 +27,11 @@ boa_noite:
     - service: script.turn_on
       target:
         entity_id: script.send_alexa_goodnight
+    - service: media_player.play_media
+      data:
+        media_content_id: Volume 4
+        media_content_type: custom
+      target:
+        entity_id: media_player.echo_pai
   mode: single
   icon: mdi:weather-night
