@@ -12,5 +12,5 @@
   action:
     - service: script.turn_on
       target:
-        entity_id: script.send_alexa_window_open_announcement
+        entity_id: script.alexa_alertar_janela_quarto_pai_aberta
   mode: single

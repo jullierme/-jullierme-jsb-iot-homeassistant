@@ -1,5 +1,5 @@
 hora_da_maldade:
-  alias: Hora de Brincar Script
+  alias: 'Hora de Brincar Script'
   sequence:
     - choose:
         - conditions:
@@ -9,7 +9,7 @@ hora_da_maldade:
           sequence:
             - service: script.turn_on
               target:
-                entity_id: script.send_alexa_window_open_announcement
+                entity_id: script.alexa_alertar_janela_quarto_pai_aberta
     - service: scene.turn_on
       target:
         entity_id: scene.desligarar

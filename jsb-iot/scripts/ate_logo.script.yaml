@@ -1,5 +1,5 @@
 ate_logo:
-  alias: Até Logo Script
+  alias: 'Até Logo Script'
   sequence:
     - service: scene.turn_on
       target:

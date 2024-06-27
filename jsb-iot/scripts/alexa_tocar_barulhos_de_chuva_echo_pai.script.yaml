@@ -1,5 +1,5 @@
-send_alexa_goodnight:
-  alias: 'Alexa Command: Tocar playlist hora de dormir'
+alexa_tocar_barulhos_de_chuva_echo_pai:
+  alias: 'Alexa tocar barulhos de chuva (Echo Pai)  Script'
   sequence:
     - service: media_player.play_media
       data:

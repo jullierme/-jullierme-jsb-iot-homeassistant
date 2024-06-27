@@ -1,5 +1,5 @@
 ligar_ar_condicionado_quarto:
-  alias: Ligar Ar Condicionado Quarto Script
+  alias: 'Ligar Ar Condicionado Quarto Script'
   sequence:
     - condition: numeric_state
       entity_id:
@@ -13,7 +13,7 @@ ligar_ar_condicionado_quarto:
 
 
 desligar_ar_condicionado_quarto:
-  alias: Desligar Ar Condicionado Quarto Script
+  alias: 'Desligar Ar Condicionado Quarto Script'
   sequence:
     - condition: numeric_state
       entity_id:

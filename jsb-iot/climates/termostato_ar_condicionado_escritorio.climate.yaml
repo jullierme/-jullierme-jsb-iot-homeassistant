@@ -5,6 +5,8 @@
   target_sensor: sensor.sensor_temperatura_escritorio_temperature
   ac_mode: true
   min_temp: 18
+  max_temp: 22
   target_temp: 22
-  hot_tolerance: 0
+  cold_tolerance: 0.5
+  hot_tolerance: 0.5
   precision: 1

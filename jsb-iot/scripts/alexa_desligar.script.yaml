@@ -1,5 +1,5 @@
-stop_alexa_command:
-  alias: STOP Alexa command
+alexa_desligar:
+  alias: 'Alexa desligar Script'
   sequence:
     - service: media_player.play_media
       data:

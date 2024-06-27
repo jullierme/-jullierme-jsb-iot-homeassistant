@@ -1,5 +1,5 @@
-send_alexa_window_open_announcement:
-  alias: 'Alexa announcement: Janela do quarto Aberta'
+alexa_alertar_janela_quarto_pai_aberta:
+  alias: 'Alexa alertar janela do quarto pai aberta (Echo Pai) Script'
   sequence:
     - service: notify.alexa_media
       data:

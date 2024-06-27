@@ -1,6 +1,5 @@
-- id: '1717452334534'
-  alias: ligar_ar_condicionado_escritorio_automation
-  description: ''
+- id: ligar_ar_condicionado_escritorio_automation
+  alias: 'Ligar Ar Condicionado Escritorio Automation'
   trigger:
     - platform: state
       entity_id:
@@ -14,10 +13,9 @@
     - choose:
         - conditions:
             - condition: template
-              value_template: ' {{ trigger.to_state.attributes.temperature | int == 18 }}'
+              value_template: ' {{ states.climate.termostato_ar_condicionado_escritorio.attributes.temperature  | int == 18 }}'
             - condition: template
-              value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''cool''
-          }}'
+              value_template: '{{ states.climate.termostato_ar_condicionado_escritorio.state == "cool" }}'
           sequence:
             - service: scene.turn_on
               target:
@@ -28,10 +26,9 @@
                   - input_boolean.flag_ar_condicionado_escritorio_ligado
         - conditions:
             - condition: template
-              value_template: ' {{ trigger.to_state.attributes.temperature | int == 19 }}'
+              value_template: ' {{ states.climate.termostato_ar_condicionado_escritorio.attributes.temperature  | int == 19 }}'
             - condition: template
-              value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''cool''
-          }}'
+              value_template: '{{ states.climate.termostato_ar_condicionado_escritorio.state == "cool" }}'
           sequence:
             - service: scene.turn_on
               target:
@@ -42,10 +39,9 @@
                   - input_boolean.flag_ar_condicionado_escritorio_ligado
         - conditions:
             - condition: template
-              value_template: ' {{ trigger.to_state.attributes.temperature | int == 20 }}'
+              value_template: ' {{ states.climate.termostato_ar_condicionado_escritorio.attributes.temperature  | int == 20 }}'
             - condition: template
-              value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''cool''
-          }}'
+              value_template: '{{ states.climate.termostato_ar_condicionado_escritorio.state == "cool" }}'
           sequence:
             - service: scene.turn_on
               target:
@@ -55,10 +51,9 @@
                 entity_id: input_boolean.flag_ar_condicionado_escritorio_ligado
         - conditions:
             - condition: template
-              value_template: ' {{ trigger.to_state.attributes.temperature | int == 21 }}'
+              value_template: ' {{ states.climate.termostato_ar_condicionado_escritorio.attributes.temperature  | int == 21 }}'
             - condition: template
-              value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''cool''
-          }}'
+              value_template: '{{ states.climate.termostato_ar_condicionado_escritorio.state == "cool" }}'
           sequence:
             - service: scene.turn_on
               target:
@@ -69,10 +64,9 @@
                   - input_boolean.flag_ar_condicionado_escritorio_ligado
         - conditions:
             - condition: template
-              value_template: ' {{ trigger.to_state.attributes.temperature | int == 22 }}'
+              value_template: ' {{ states.climate.termostato_ar_condicionado_escritorio.attributes.temperature  | int == 22 }}'
             - condition: template
-              value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''cool''
-          }}'
+              value_template: '{{ states.climate.termostato_ar_condicionado_escritorio.state == "cool" }}'
           sequence:
             - service: scene.turn_on
               target:
@@ -82,16 +76,15 @@
                 entity_id: input_boolean.flag_ar_condicionado_escritorio_ligado
   mode: single
 
-- id: '1717452454965'
-  alias: desligar_ar_condicionado_escritorio_automation
+- id: desligar_ar_condicionado_escritorio_automation
+  alias: 'Desligar Ar Condicionado Escritorio Automation'
   trigger:
     - platform: state
       entity_id:
         - climate.termostato_ar_condicionadoo_escritorio
   condition:
     - condition: template
-      value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''off''
-    }}'
+      value_template: '{{ states.climate.termostato_ar_condicionado_escritorio.state == "off" }}'
   action:
     - service: scene.turn_on
       target:
