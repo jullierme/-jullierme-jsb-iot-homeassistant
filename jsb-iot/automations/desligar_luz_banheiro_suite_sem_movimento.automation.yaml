@@ -12,4 +12,4 @@
   action:
     - service: switch.turn_off
       target:
-        entity_id: light.interruptor_do_banheiro_switch_2
+        entity_id: switch.interruptor_do_banheiro_switch_2

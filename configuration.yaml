@@ -1,15 +1,6 @@
 # Loads default set of integrations. Do not remove.
 default_config:
-  name: JSB-IoT Home Assistant
-  unit_system: metric
-  currency: BRL
-  country: BR
-  time_zone: America/Sao_Paulo
-  location_name: Home
-  language: en
-  elevation: 0
-  latitude: -16.70618416506013
-  longitude: -49.28827285766602
+
 # Load frontend themes from the themes folder
 frontend:
   themes: !include_dir_merge_named themes

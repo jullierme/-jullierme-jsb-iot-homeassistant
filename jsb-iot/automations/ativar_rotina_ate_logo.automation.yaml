@@ -13,7 +13,7 @@
         entity_id: script.ate_logo
   mode: single
 
-- id: '1717625319711'
+- id: '1717625315711'
   alias: Desativar Flag Rotina Até Logo
   trigger:
     - platform: state
