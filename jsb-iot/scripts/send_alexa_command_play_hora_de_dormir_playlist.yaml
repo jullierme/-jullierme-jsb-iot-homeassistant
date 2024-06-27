@@ -3,7 +3,7 @@ send_alexa_goodnight:
   sequence:
     - service: media_player.play_media
       data:
-        media_content_id: Tocar playlist hora de dormir
+        media_content_id: Tocar barulho de chuva
         media_content_type: custom
       target:
         entity_id: media_player.echo_pai

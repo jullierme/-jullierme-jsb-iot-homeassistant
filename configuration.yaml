@@ -22,7 +22,12 @@ automation: !include_dir_merge_list jsb-iot/automations
 script: !include_dir_merge_named jsb-iot/scripts
 scene: !include_dir_merge_named jsb-iot/scenes
 climate: !include_dir_merge_named jsb-iot/climates
-emulated_hue: !include_dir_merge_named jsb-iot/hues
+
+emulated_hue:
+  host_ip: !secret ha_ip
+  listen_port: 80
+  expose_by_default: false
+  entities: !include_dir_merge_named jsb-iot/hues
 
 input_boolean: !include jsb-iot/helpers/input_boolean.yaml
 input_select: !include jsb-iot/helpers/input_select.yaml

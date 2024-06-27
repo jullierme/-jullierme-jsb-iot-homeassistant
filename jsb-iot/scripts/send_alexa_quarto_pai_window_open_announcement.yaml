@@ -5,7 +5,7 @@ send_alexa_window_open_announcement:
       data:
         target:
           - media_player.echo_pai
-        message: Janela do quarto Aberta
+        message: A janela do quarto está aberta, por favor, feche a Janela.
         data:
           type: announce
   mode: single

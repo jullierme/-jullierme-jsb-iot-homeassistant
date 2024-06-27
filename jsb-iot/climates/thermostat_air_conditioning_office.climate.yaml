@@ -2,7 +2,7 @@
   unique_id: GTerm
   name: Termostato Ar-Condicionado
   heater: input_boolean.flag_ar_condicionado_escritorio_ligado
-  target_sensor: sensor.teste
+  target_sensor: sensor.sensor_temperatura_escritorio_temperature
   ac_mode: true
   min_temp: 18
   target_temp: 22

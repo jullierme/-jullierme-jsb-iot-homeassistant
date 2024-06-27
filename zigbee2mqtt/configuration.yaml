@@ -1,0 +1,51 @@
+homeassistant: true
+advanced:
+  network_key:
+    - 69
+    - 141
+    - 140
+    - 107
+    - 144
+    - 14
+    - 2
+    - 68
+    - 160
+    - 113
+    - 194
+    - 176
+    - 219
+    - 32
+    - 82
+    - 142
+  pan_id: 46706
+  ext_pan_id:
+    - 25
+    - 66
+    - 48
+    - 100
+    - 233
+    - 6
+    - 23
+    - 10
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+mqtt:
+  server: mqtt://core-mosquitto:1883
+  user: mqtt_user
+  password: mqtt_password
+serial:
+  port: >-
+    /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20240124210926-if00
+  adapter: ember
+  baudrate: 230400
+frontend:
+  port: 8099
+device_options:
+  legacy: false
+permit_join: true
+devices:
+  '0x842712fffe7a22b1':
+    friendly_name: sensor_presenca_banheiro_suite
+  '0x60a423fffe3c5765':
+    friendly_name: sensor_temperatura_escritorio

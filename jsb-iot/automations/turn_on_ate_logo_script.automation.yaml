@@ -1,24 +1,24 @@
-- id: '1717533412131'
-  alias: Ativar Rotina Boa Noite
+- id: '1776543412131'
+  alias: Ativar Rotina Até Logo
   trigger:
     - platform: state
       entity_id:
-        - input_boolean.flag_ativar_rotina_boa_noite
+        - input_boolean.flag_ativar_rotina_ate_logo
       from: 'off'
       to: 'on'
   condition: []
   action:
     - service: script.turn_on
       target:
-        entity_id: script.boa_noite
+        entity_id: script.ate_logo
   mode: single
 
-- id: '1717625353711'
-  alias: Desativar Flag Rotina Boa Noite
+- id: '1717625319711'
+  alias: Desativar Flag Rotina Até Logo
   trigger:
     - platform: state
       entity_id:
-        - input_boolean.flag_ativar_rotina_boa_noite
+        - input_boolean.flag_ativar_rotina_ate_logo
       from: 'off'
       to: 'on'
       for:
@@ -29,5 +29,5 @@
   action:
     - service: input_boolean.turn_off
       target:
-        entity_id: input_boolean.flag_ativar_rotina_boa_noite
+        entity_id: input_boolean.flag_ativar_rotina_ate_logo
   mode: single

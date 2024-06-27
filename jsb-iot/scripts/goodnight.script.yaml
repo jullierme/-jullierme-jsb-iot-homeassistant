@@ -10,38 +10,22 @@ boa_noite:
             - service: script.turn_on
               target:
                 entity_id: script.send_alexa_window_open_announcement
-              data: {}
     - service: scene.turn_on
       target:
         entity_id: scene.desligarar
-      data: {}
-    - type: turn_off
-      device_id: 96d5366055f18e2af81eb8a8e932eed9
-      entity_id: 23b51559254aa8ca379f82fa84e539c6
-      domain: switch
-    - type: turn_off
-      device_id: 78497e228f6320489a16986456c797c4
-      entity_id: 2fc4b6ff268387181ed9ff21fc2d7e19
-      domain: light
-    - type: turn_off
-      device_id: 1a047f838df742c313c07f5bd1c53aaa
-      entity_id: dc82075b67038e35b31ba7e5c56a9e17
-      domain: switch
-    - type: turn_off
-      device_id: 03ca539bc803051b955a1a8fce112e9c
-      entity_id: 28b8f0d8369972d2c68cd9c6402c6d3e
-      domain: switch
+    - service: switch.turn_off
+      target:
+        entity_id:
+          - switch.luz_escritorio_switch_1
+          - switch.lamparina_socket_1
+          - switch.interruptor_do_banheiro_switch_2
+    - service: light.turn_off
+      target:
+        entity_id:
+          - light.luz_1
+          - light.luz_2
     - service: script.turn_on
-      data: {}
       target:
         entity_id: script.send_alexa_goodnight
-    - service: light.turn_off
-      metadata: {}
-      data: {}
-      target:
-        device_id:
-          - aaf94372c253a2a19fdc03b642930cd4
-          - b9a777033a0486f32cc9ffbfbe41cf76
-          - 2baf7c0dd35405a5e761f110c8661036
   mode: single
   icon: mdi:weather-night

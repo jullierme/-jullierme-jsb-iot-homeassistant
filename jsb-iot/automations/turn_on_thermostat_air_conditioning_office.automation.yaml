@@ -20,14 +20,12 @@
           }}'
           sequence:
             - service: scene.turn_on
-              metadata: {}
               target:
                 entity_id: scene.ligarar18
             - service: input_boolean.turn_on
               target:
                 entity_id:
                   - input_boolean.flag_ar_condicionado_escritorio_ligado
-              data: {}
         - conditions:
             - condition: template
               value_template: ' {{ trigger.to_state.attributes.temperature | int == 19 }}'
@@ -36,14 +34,12 @@
           }}'
           sequence:
             - service: scene.turn_on
-              metadata: {}
               target:
                 entity_id: scene.ligarar19
             - service: input_boolean.turn_on
               target:
                 entity_id:
                   - input_boolean.flag_ar_condicionado_escritorio_ligado
-              data: {}
         - conditions:
             - condition: template
               value_template: ' {{ trigger.to_state.attributes.temperature | int == 20 }}'
@@ -52,12 +48,9 @@
           }}'
           sequence:
             - service: scene.turn_on
-              metadata: {}
               target:
                 entity_id: scene.ligarar20
             - service: input_boolean.turn_on
-              metadata: {}
-              data: {}
               target:
                 entity_id: input_boolean.flag_ar_condicionado_escritorio_ligado
         - conditions:
@@ -68,14 +61,12 @@
           }}'
           sequence:
             - service: scene.turn_on
-              metadata: {}
               target:
                 entity_id: scene.ligarar21
             - service: input_boolean.turn_on
               target:
                 entity_id:
                   - input_boolean.flag_ar_condicionado_escritorio_ligado
-              data: {}
         - conditions:
             - condition: template
               value_template: ' {{ trigger.to_state.attributes.temperature | int == 22 }}'
@@ -84,12 +75,28 @@
           }}'
           sequence:
             - service: scene.turn_on
-              metadata: {}
               target:
                 entity_id: scene.ligarar22
             - service: input_boolean.turn_on
-              metadata: {}
-              data: {}
               target:
                 entity_id: input_boolean.flag_ar_condicionado_escritorio_ligado
+  mode: single
+
+- id: '1717452454965'
+  alias: desligar_ar_condicionado_escritorio_automation
+  trigger:
+    - platform: state
+      entity_id:
+        - climate.termostato_ar_condicionado
+  condition:
+    - condition: template
+      value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''off''
+    }}'
+  action:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.desligarar
+    - service: input_boolean.turn_off
+      target:
+        entity_id: input_boolean.flag_ar_condicionado_escritorio_ligado
   mode: single

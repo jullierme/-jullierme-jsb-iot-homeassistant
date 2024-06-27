@@ -1,6 +1,5 @@
 - id: '1717675251587'
   alias: Alerta de janela aberta quando ar do quarto estiver ligado
-  description: ''
   trigger:
     - platform: numeric_state
       entity_id:
@@ -14,5 +13,4 @@
     - service: script.turn_on
       target:
         entity_id: script.send_alexa_window_open_announcement
-      data: {}
   mode: single

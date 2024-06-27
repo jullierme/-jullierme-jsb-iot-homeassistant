@@ -1,0 +1,3 @@
+input_boolean.flag_ativar_rotina_hora_da_maldade:
+  name: "Hue Hora da maldade"
+  hidden: false
