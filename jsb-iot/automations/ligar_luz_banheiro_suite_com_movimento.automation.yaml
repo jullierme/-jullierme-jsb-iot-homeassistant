@@ -1,0 +1,17 @@
+- id: ligar_luz_banheiro_suite_com_movimento
+  alias: Ligar Luz Banheiro da Suíte com Movimento
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.sensor_presenca_banheiro_suite_occupancy
+      to: 'on'
+  condition:
+    - condition: state
+      entity_id: sensor.sensor_presenca_banheiro_suite_illumination
+      state: 'dim'
+    - condition: state
+      entity_id: switch.interruptor_do_banheiro_switch_2
+      state: 'off'
+  action:
+    - service: switch.turn_on
+      target:
+        entity_id: light.interruptor_do_banheiro_switch_2

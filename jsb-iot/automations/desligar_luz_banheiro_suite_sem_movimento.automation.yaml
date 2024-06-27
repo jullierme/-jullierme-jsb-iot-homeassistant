@@ -1,0 +1,15 @@
+- id: desligar_luz_banheiro_suite_sem_movimento
+  alias: Desligar Luz Banheiro da Suíte sem Movimento
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.sensor_presenca_banheiro_suite_occupancy
+      to: 'off'
+      for: '00:01:00'  # 1 minutos sem movimento
+  condition:
+    - condition: state
+      entity_id: switch.interruptor_do_banheiro_switch_2
+      state: 'on'
+  action:
+    - service: switch.turn_off
+      target:
+        entity_id: light.interruptor_do_banheiro_switch_2
