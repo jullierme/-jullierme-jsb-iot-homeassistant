@@ -15,8 +15,12 @@ ate_logo:
         entity_id:
           - light.luz_1
           - light.luz_2
+          - light.lampadas_philips
     - service: script.turn_on
       target:
         entity_id: script.desligar_ar_condicionado_quarto
+    - service: script.turn_on
+      target:
+        entity_id: script.alexa_desligar
   mode: single
   icon: mdi:weather-night
