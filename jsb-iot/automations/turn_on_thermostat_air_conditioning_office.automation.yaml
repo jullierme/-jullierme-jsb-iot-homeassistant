@@ -4,10 +4,10 @@
   trigger:
     - platform: state
       entity_id:
-        - climate.termostato_ar_condicionado
+        - climate.termostato_ar_condicionado_escritorio
     - platform: state
       entity_id:
-        - climate.termostato_ar_condicionado
+        - climate.termostato_ar_condicionado_escritorio
       attribute: temperature
   condition: []
   action:
@@ -16,7 +16,7 @@
             - condition: template
               value_template: ' {{ trigger.to_state.attributes.temperature | int == 18 }}'
             - condition: template
-              value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''cool''
+              value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''cool''
           }}'
           sequence:
             - service: scene.turn_on
@@ -30,7 +30,7 @@
             - condition: template
               value_template: ' {{ trigger.to_state.attributes.temperature | int == 19 }}'
             - condition: template
-              value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''cool''
+              value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''cool''
           }}'
           sequence:
             - service: scene.turn_on
@@ -44,7 +44,7 @@
             - condition: template
               value_template: ' {{ trigger.to_state.attributes.temperature | int == 20 }}'
             - condition: template
-              value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''cool''
+              value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''cool''
           }}'
           sequence:
             - service: scene.turn_on
@@ -57,7 +57,7 @@
             - condition: template
               value_template: ' {{ trigger.to_state.attributes.temperature | int == 21 }}'
             - condition: template
-              value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''cool''
+              value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''cool''
           }}'
           sequence:
             - service: scene.turn_on
@@ -71,7 +71,7 @@
             - condition: template
               value_template: ' {{ trigger.to_state.attributes.temperature | int == 22 }}'
             - condition: template
-              value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''cool''
+              value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''cool''
           }}'
           sequence:
             - service: scene.turn_on
@@ -87,10 +87,10 @@
   trigger:
     - platform: state
       entity_id:
-        - climate.termostato_ar_condicionado
+        - climate.termostato_ar_condicionadoo_escritorio
   condition:
     - condition: template
-      value_template: '{{ states(''climate.termostato_ar_condicionado'') == ''off''
+      value_template: '{{ states(''climate.termostato_ar_condicionado_escritorio'') == ''off''
     }}'
   action:
     - service: scene.turn_on

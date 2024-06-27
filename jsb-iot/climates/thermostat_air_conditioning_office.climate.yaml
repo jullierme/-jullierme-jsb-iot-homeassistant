@@ -1,6 +1,6 @@
 - platform: generic_thermostat
   unique_id: GTerm
-  name: Termostato Ar-Condicionado
+  name: termostato_ar_condicionado_escritorio
   heater: input_boolean.flag_ar_condicionado_escritorio_ligado
   target_sensor: sensor.sensor_temperatura_escritorio_temperature
   ac_mode: true
