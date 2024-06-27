@@ -4,9 +4,6 @@
     - platform: state
       entity_id:
         - climate.termostato_ar_condicionado_escritorio
-    - platform: state
-      entity_id:
-        - climate.termostato_ar_condicionado_escritorio
       attribute: temperature
   condition: []
   action:
@@ -14,16 +11,10 @@
         - conditions:
             - condition: template
               value_template: ' {{ states.climate.termostato_ar_condicionado_escritorio.attributes.temperature  | int == 18 }}'
-            - condition: template
-              value_template: '{{ states.climate.termostato_ar_condicionado_escritorio.state == "cool" }}'
           sequence:
             - service: scene.turn_on
               target:
                 entity_id: scene.ligarar18
-            - service: input_boolean.turn_on
-              target:
-                entity_id:
-                  - input_boolean.flag_ar_condicionado_escritorio_ligado
         - conditions:
             - condition: template
               value_template: ' {{ states.climate.termostato_ar_condicionado_escritorio.attributes.temperature  | int == 19 }}'
@@ -33,10 +24,6 @@
             - service: scene.turn_on
               target:
                 entity_id: scene.ligarar19
-            - service: input_boolean.turn_on
-              target:
-                entity_id:
-                  - input_boolean.flag_ar_condicionado_escritorio_ligado
         - conditions:
             - condition: template
               value_template: ' {{ states.climate.termostato_ar_condicionado_escritorio.attributes.temperature  | int == 20 }}'
@@ -46,9 +33,6 @@
             - service: scene.turn_on
               target:
                 entity_id: scene.ligarar20
-            - service: input_boolean.turn_on
-              target:
-                entity_id: input_boolean.flag_ar_condicionado_escritorio_ligado
         - conditions:
             - condition: template
               value_template: ' {{ states.climate.termostato_ar_condicionado_escritorio.attributes.temperature  | int == 21 }}'
@@ -58,10 +42,6 @@
             - service: scene.turn_on
               target:
                 entity_id: scene.ligarar21
-            - service: input_boolean.turn_on
-              target:
-                entity_id:
-                  - input_boolean.flag_ar_condicionado_escritorio_ligado
         - conditions:
             - condition: template
               value_template: ' {{ states.climate.termostato_ar_condicionado_escritorio.attributes.temperature  | int == 22 }}'
@@ -71,9 +51,9 @@
             - service: scene.turn_on
               target:
                 entity_id: scene.ligarar22
-            - service: input_boolean.turn_on
-              target:
-                entity_id: input_boolean.flag_ar_condicionado_escritorio_ligado
+    - service: input_boolean.turn_on
+      target:
+        entity_id: input_boolean.flag_ar_condicionado_escritorio_ligado
   mode: single
 
 - id: desligar_ar_condicionado_escritorio_automation
@@ -82,9 +62,7 @@
     - platform: state
       entity_id:
         - climate.termostato_ar_condicionadoo_escritorio
-  condition:
-    - condition: template
-      value_template: '{{ states.climate.termostato_ar_condicionado_escritorio.state == "off" }}'
+      to: 'off'
   action:
     - service: scene.turn_on
       target:
