@@ -19,6 +19,7 @@ boa_noite:
           - switch.luz_escritorio_switch_1
           - switch.lamparina_socket_1
           - switch.interruptor_do_banheiro_switch_2
+          - switch.monitor_escriotio_1
     - service: light.turn_off
       target:
         entity_id:
