@@ -6,8 +6,8 @@
       to: 'on'
   condition:
     - condition: state
-      entity_id: sensor.sensor_presenca_banheiro_suite_illumination
-      state: 'dim'
+      entity_id: sun.sun
+      state: 'below_horizon'
     - condition: state
       entity_id: switch.interruptor_do_banheiro_switch_2
       state: 'off'

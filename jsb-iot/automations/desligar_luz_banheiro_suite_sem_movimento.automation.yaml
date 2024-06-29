@@ -4,7 +4,7 @@
     - platform: state
       entity_id: binary_sensor.sensor_presenca_banheiro_suite_occupancy
       to: 'off'
-      for: '00:01:00'  # 1 minutos sem movimento
+      for: '00:07:00'  # 7 minutos sem movimento
   condition:
     - condition: state
       entity_id: switch.interruptor_do_banheiro_switch_2
