@@ -51,3 +51,5 @@ devices:
     friendly_name: sensor_temperatura_escritorio
   '0x842712fffe7a297d':
     friendly_name: sensor_presenca_banheiro_social
+  '0xa4c138771f874797':
+    friendly_name: sensor_presenca_humana_escritorio

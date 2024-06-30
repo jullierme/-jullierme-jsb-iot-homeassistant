@@ -6,7 +6,6 @@
         - input_boolean.flag_ativar_rotina_ate_logo
       from: 'off'
       to: 'on'
-  condition: []
   action:
     - service: script.turn_on
       target:

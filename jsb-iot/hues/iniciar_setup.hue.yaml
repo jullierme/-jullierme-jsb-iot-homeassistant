@@ -1,3 +1,0 @@
-input_boolean.flag_ativar_rotina_iniciar_setup:
-  name: "Hue Iniciar Setup"
-  hidden: false

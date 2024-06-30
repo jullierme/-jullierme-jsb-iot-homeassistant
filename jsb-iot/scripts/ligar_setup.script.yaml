@@ -1,5 +1,5 @@
-iniciar_setup:
-  alias: 'Iniciar Setup Script'
+ligar_setup:
+  alias: 'Ligar Setup Script'
   sequence:
     - service: switch.turn_on
       target:

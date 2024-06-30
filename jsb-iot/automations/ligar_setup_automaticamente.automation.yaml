@@ -1,0 +1,21 @@
+- id: 'ligar_setup_automaticamente'
+  alias: 'Ligar Setup Automaticamente Automation'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.sensor_presenca_humana_escritorio_presence
+      from: 'off'
+      to: 'on'
+  condition:
+    - condition: state
+      entity_id: switch.monitor_escriotio_1
+      state: 'off'
+    - condition: state
+      entity_id: sun.sun
+      state: 'above_horizon'
+    - condition: numeric_state
+      entity_id: sensor.sensor_presenca_humana_escritorio_target_distance
+      below: '0.60'
+  action:
+    - service: script.turn_on
+      target:
+        entity_id: script.ligar_setup

@@ -1,0 +1,3 @@
+input_boolean.flag_ativar_rotina_ligar_setup:
+  name: "Hue Ligar Setup"
+  hidden: false
