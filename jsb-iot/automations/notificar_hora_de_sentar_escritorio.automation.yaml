@@ -7,7 +7,7 @@
       to: 'on'
       for:
         hours: 0
-        minutes: 1
+        minutes: 10
         seconds: 0
   action:
     - service: script.turn_on

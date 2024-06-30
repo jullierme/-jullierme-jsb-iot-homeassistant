@@ -10,5 +10,8 @@ ligar_setup:
       data:
         entity_id: light.lampadas_philips
         color_name: red
+    - service: scene.turn_on
+      target:
+        entity_id: scene.LigarAromatizador
   mode: single
   icon: mdi:weather-night

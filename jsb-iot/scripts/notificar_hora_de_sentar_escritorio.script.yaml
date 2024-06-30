@@ -11,7 +11,7 @@ notificar_hora_de_sentar_escritorio:
             data:
               target:
                 - media_player.echo_dot_escritorio
-              message: Esta na hora de se sentar.
+              message: Está na hora de se sentar.
               data:
                 type: announce
   mode: single
