@@ -5,7 +5,6 @@
       entity_id:
         - climate.termostato_ar_condicionado_escritorio
       attribute: temperature
-  condition: []
   action:
     - choose:
         - conditions:
@@ -61,7 +60,7 @@
   trigger:
     - platform: state
       entity_id:
-        - climate.termostato_ar_condicionadoo_escritorio
+        - climate.termostato_ar_condicionado_escritorio
       to: 'off'
   action:
     - service: scene.turn_on

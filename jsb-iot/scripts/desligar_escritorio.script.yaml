@@ -1,4 +1,4 @@
-desligar_esritorio:
+desligar_escritorio:
   alias: 'Desligar Escritório Script'
   sequence:
     - service: scene.turn_on
