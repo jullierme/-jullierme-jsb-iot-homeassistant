@@ -1,0 +1,16 @@
+- id: 'desligar_escritorio_automaticamente'
+  alias: 'Desligar Escritório Automaticamente Automation'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.sensor_presenca_humana_escritorio_presence
+      from: 'on'
+      to: 'off'
+      for: '00:05:00'
+  condition:
+    - condition: state
+      entity_id: switch.monitor_escriotio_1
+      state: 'on'
+  action:
+    - service: script.turn_on
+      target:
+        entity_id: script.desligar_escritorio
