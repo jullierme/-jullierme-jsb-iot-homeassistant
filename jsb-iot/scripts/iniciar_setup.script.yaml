@@ -5,6 +5,7 @@ iniciar_setup:
       target:
         entity_id:
           - switch.monitor_escriotio_1
+          - switch.tomada_aromatizador_escritorio
     - service: light.turn_on
       data:
         entity_id: light.lampadas_philips

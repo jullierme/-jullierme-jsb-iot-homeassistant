@@ -1,0 +1,3 @@
+input_boolean.flag_ativar_rotina_desligar_escritorio:
+  name: "Hue Desligar Escritório"
+  hidden: false

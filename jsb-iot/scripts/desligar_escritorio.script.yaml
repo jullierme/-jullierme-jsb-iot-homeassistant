@@ -1,0 +1,18 @@
+desligar_esritorio:
+  alias: 'Desligar Escritório Script'
+  sequence:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.desligarar
+    - service: switch.turn_off
+      target:
+        entity_id:
+          - switch.luz_escritorio_switch_1
+          - switch.monitor_escriotio_1
+          - switch.tomada_aromatizador_escritorio
+    - service: light.turn_off
+      target:
+        entity_id:
+          - light.lampadas_philips
+  mode: single
+  icon: mdi:weather-night

@@ -10,25 +10,21 @@ boa_noite:
             - service: script.turn_on
               target:
                 entity_id: script.alexa_alertar_janela_quarto_pai_aberta
-    - service: scene.turn_on
-      target:
-        entity_id: scene.desligarar
     - service: switch.turn_off
       target:
         entity_id:
-          - switch.luz_escritorio_switch_1
           - switch.lamparina_socket_1
           - switch.interruptor_do_banheiro_switch_2
-          - switch.monitor_escriotio_1
     - service: light.turn_off
       target:
         entity_id:
           - light.luz_1
           - light.luz_2
-          - light.lampadas_philips
     - service: script.turn_on
       target:
-        entity_id: script.alexa_tocar_barulhos_de_chuva_echo_pai
+        entity_id:
+          - script.desligar_esritorio
+          - script.alexa_tocar_barulhos_de_chuva_echo_pai
     - service: media_player.play_media
       data:
         media_content_id: Volume 4

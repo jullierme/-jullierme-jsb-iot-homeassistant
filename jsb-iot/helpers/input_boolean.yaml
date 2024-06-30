@@ -11,3 +11,5 @@ flag_ativar_rotina_ate_logo:
   name: flag_ativar_rotina_ate_logo
 flag_ativar_rotina_iniciar_setup:
   name: flag_ativar_rotina_iniciar_setup
+flag_ativar_rotina_desligar_escritorio:
+  name: flag_ativar_rotina_desligar_escritorio
