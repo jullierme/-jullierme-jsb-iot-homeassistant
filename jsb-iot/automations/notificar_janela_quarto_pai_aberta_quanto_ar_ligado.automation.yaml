@@ -1,4 +1,4 @@
-- id: '1717675251587'
+- id: 'notificar_janela_quarto_pai_aberta_quanto_ar_ligado_automation'
   alias: Alerta de janela aberta quando ar do quarto estiver ligado
   trigger:
     - platform: numeric_state

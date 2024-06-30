@@ -1,4 +1,4 @@
-- id: ligar_ar_condicionado_escritorio_automation
+- id: 'ligar_termostato_ar_condicionado_escritorio_automation'
   alias: 'Ligar Ar Condicionado Escritorio Automation'
   trigger:
     - platform: state
@@ -56,7 +56,7 @@
         entity_id: input_boolean.flag_ar_condicionado_escritorio_ligado
   mode: single
 
-- id: desligar_ar_condicionado_escritorio_automation
+- id: 'desligar_termostato_ar_condicionado_escritorio_automation'
   alias: 'Desligar Ar Condicionado Escritorio Automation'
   trigger:
     - platform: state

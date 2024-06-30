@@ -1,0 +1,33 @@
+- id: 'ativar_rotina_desligar_escritorio_automation'
+  alias: Ativar Rotina Desligar Escritório
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.flag_ativar_rotina_desligar_escritorio
+      from: 'off'
+      to: 'on'
+  condition: []
+  action:
+    - service: script.turn_on
+      target:
+        entity_id: script.desligar_escritorio
+  mode: single
+
+- id: 'desativar_flag_rotina_desligar_escritorio_automation'
+  alias: Desativar Flag Rotina Desligar Escritório
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.flag_ativar_rotina_desligar_escritorio
+      from: 'off'
+      to: 'on'
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 5
+  condition: [ ]
+  action:
+    - service: input_boolean.turn_off
+      target:
+        entity_id: input_boolean.flag_ativar_rotina_desligar_escritorio
+  mode: single

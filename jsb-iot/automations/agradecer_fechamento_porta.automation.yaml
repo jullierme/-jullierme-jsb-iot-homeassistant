@@ -1,4 +1,4 @@
-- id: '1717625628356'
+- id: 'agradecer_fechamento_porta_automation'
   alias: Agradecer Porta Fechada Automation
   trigger:
     - platform: state

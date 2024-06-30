@@ -1,4 +1,4 @@
-- id: '1776543412131'
+- id: 'ativar_rotina_ate_logo_automation'
   alias: Ativar Rotina Até Logo
   trigger:
     - platform: state
@@ -13,7 +13,7 @@
         entity_id: script.ate_logo
   mode: single
 
-- id: '1717625315711'
+- id: 'desativar_flag_rotina_ate_logo_automation'
   alias: Desativar Flag Rotina Até Logo
   trigger:
     - platform: state

@@ -1,4 +1,4 @@
-- id: ligar_luz_banheiro_suite_com_movimento
+- id: 'ligar_luz_banheiro_suite_com_movimento_automation'
   alias: Ligar Luz Banheiro da Suíte com Movimento
   trigger:
     - platform: state

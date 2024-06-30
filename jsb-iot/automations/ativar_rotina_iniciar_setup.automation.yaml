@@ -13,7 +13,7 @@
         entity_id: script.iniciar_setup
   mode: single
 
-- id: 'desativar_rotina_ativar_setup_automation'
+- id: 'desativar_flag_rotina_ativar_setup_automation'
   alias: Desativar Flag Rotina Iniciar Setup
   trigger:
     - platform: state

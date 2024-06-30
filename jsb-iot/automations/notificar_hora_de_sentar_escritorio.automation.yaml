@@ -1,0 +1,16 @@
+- id: 'notificar_hora_de_sentar_escritorio_automation'
+  alias: Notificar Hora de Se Sentar (Escritório) Automation
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.sensor_mesa_escritorio_door
+      from: 'off'
+      to: 'on'
+      for:
+        hours: 0
+        minutes: 1
+        seconds: 0
+  action:
+    - service: script.turn_on
+      target:
+        entity_id: script.notificar_hora_de_sentar_escritorio
+  mode: single

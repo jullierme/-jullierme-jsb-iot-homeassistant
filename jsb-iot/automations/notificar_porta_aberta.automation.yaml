@@ -1,4 +1,4 @@
-- id: '1717625606588'
+- id: 'notificar_porta_aberta_automation'
   alias: Notificar Porta Aberta Automation
   trigger:
     - platform: state

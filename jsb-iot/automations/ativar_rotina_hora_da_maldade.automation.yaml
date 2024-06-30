@@ -1,4 +1,4 @@
-- id: '1713343412131'
+- id: 'ativar_rotina_hora_da_maldade_automation'
   alias: Ativar Rotina Hora da Maldade
   trigger:
     - platform: state
@@ -13,7 +13,7 @@
         entity_id: script.hora_da_maldade
   mode: single
 
-- id: '1717625319711'
+- id: 'desativar_flag_rotina_hora_da_maldade_automation'
   alias: Desativar Flag Rotina Hora da Maldade
   trigger:
     - platform: state

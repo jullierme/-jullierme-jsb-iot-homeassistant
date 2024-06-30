@@ -1,0 +1,19 @@
+notificar_hora_de_sentar_escritorio:
+  alias: 'Notificar hora de sentar (Echo Dot Escritório) Script'
+  sequence:
+    - choose:
+      - conditions:
+        - condition: state
+          entity_id: switch.monitor_escriotio_1
+          state: 'on'
+        sequence:
+          - service: notify.alexa_media
+            data:
+              target:
+                - media_player.echo_dot_escritorio
+              message: Esta na hora de se sentar.
+              data:
+                type: announce
+  mode: single
+
+

@@ -1,4 +1,4 @@
-- id: desligar_luz_banheiro_suite_sem_movimento
+- id: 'desligar_luz_banheiro_suite_sem_movimento_automation'
   alias: Desligar Luz Banheiro da Suíte sem Movimento
   trigger:
     - platform: state

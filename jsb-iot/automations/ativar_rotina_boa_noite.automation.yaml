@@ -1,4 +1,4 @@
-- id: '1717533412131'
+- id: 'ativar_rotina_boa_noite_automation'
   alias: Ativar Rotina Boa Noite
   trigger:
     - platform: state
@@ -13,7 +13,7 @@
         entity_id: script.boa_noite
   mode: single
 
-- id: '1717625353711'
+- id: 'desativar_flag_rotina_boa_noite_automation'
   alias: Desativar Flag Rotina Boa Noite
   trigger:
     - platform: state
